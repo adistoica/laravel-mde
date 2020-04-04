@@ -31,7 +31,7 @@ After the dependency installation is complete, if the laravel version is less th
 
 ```php
 'providers' => [
-    AdrianStoica\Editor\EditorServiceProvider::class,
+    \AdrianStoica\LaravelMde\EditorServiceProvider::class
 ],
 ```
 
