@@ -1,0 +1,33 @@
+{
+    "name": "adrianstoica/laravel-mde",
+    "description": "Modern, concise and easy-to-use Markdown text editor",
+    "type": "extension",
+    "keywords": [
+        "markdown",
+        "editor",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [{
+        "name": "Adrian Stoica",
+        "email": "astoica@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdrianStoica\\LaravelMde\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdrianStoica\\LaravelMde\\EditorServiceProvider"
+            ]
+        }
+    }
+}
