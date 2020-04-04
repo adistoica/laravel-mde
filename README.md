@@ -41,13 +41,12 @@ php artisan vendor:publish --force
 ```
 
 ```php
-<?php
-
 /**
  * For simplemde configuration options, please refer to the documentation: https://github.com/Inscryb/inscryb-markdown-editor for specific settings
  * Only some important configurable items are listed here
  * Please note that the value of the configuration item here must be a string `true` or` false`
  * /
+
 return [
      'autofocus' => 'true', // autofocus
      'autosave' => 'false', // automatically press save
