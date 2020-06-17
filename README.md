@@ -31,7 +31,7 @@ After the dependency installation is complete, if the laravel version is less th
 
 ```php
 'providers' => [
-    \AdrianStoica\LaravelMde\EditorServiceProvider::class
+    AdrianStoica\Editor\EditorServiceProvider::class,
 ],
 ```
 
@@ -41,12 +41,13 @@ php artisan vendor:publish --force
 ```
 
 ```php
+<?php
+
 /**
  * For simplemde configuration options, please refer to the documentation: https://github.com/Inscryb/inscryb-markdown-editor for specific settings
  * Only some important configurable items are listed here
  * Please note that the value of the configuration item here must be a string `true` or` false`
  * /
-
 return [
      'autofocus' => 'true', // autofocus
      'autosave' => 'false', // automatically press save
@@ -66,6 +67,7 @@ return [
      'tabSize' => 4,
      'toolbarTips' => 'true',
      'example' => 'true', // open example (can be closed)
+     'buttons' => '["bold", "italic", "strikethrough", "heading", "|", "quote", "code", "table", "horizontal-rule", "unordered-list", "ordered-list", "|","link", "|", "side-by-side", "fullscreen", "|"]'
 ];
 ```
 

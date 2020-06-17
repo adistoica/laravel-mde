@@ -18,4 +18,5 @@ return [
     'tabSize' => 4,
     'toolbarTips' => 'false',
     'example' => 'false', // enable example
+    'buttons' => '["bold", "italic", "strikethrough", "heading", "|", "quote", "code", "table", "horizontal-rule", "unordered-list", "ordered-list", "|","link", "|", "side-by-side", "fullscreen", "|"]' // editor buttons
 ];

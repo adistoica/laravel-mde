@@ -122,11 +122,7 @@ if (!function_exists('editor_config')) {
                     styleSelectedText: ' . config('editor.styleSelectedText') . ',
                     syncSideBySidePreviewScroll: ' . config('editor.syncSideBySidePreviewScroll') . ',
                     tabSize: ' . config('editor.tabSize') . ',
-                    toolbar: [
-                        "bold", "italic", "strikethrough", "heading", "|", "quote", "code", "table",
-                        "horizontal-rule", "unordered-list", "ordered-list", "|",
-                        "link", "|", "side-by-side", "fullscreen", "|",
-                    ],
+                    toolbar: '. config('editor.buttons') .',
                     toolbarTips: ' . config('editor.toolbarTips') . ',
                 });
                 mdeditor.codemirror.setSize("auto", "' . config('editor.maxHeight') . '");
