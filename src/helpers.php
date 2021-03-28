@@ -78,7 +78,9 @@ if (!function_exists('editor_config')) {
      * @param string $autosave_id
      * @return void
      */
-    function editor_config($editor_id = 'mde-editor', $autosave_id) {
+    function editor_config($autosave_id) {
+        $editor_id = 'mde-editor';
+        
         return '<script>$(function () {
                 var mdeditor = new InscrybMDE({
                     autofocus: ' . config('editor.autofocus') . ',
